@@ -49,6 +49,10 @@ namespace listIntro {
             Dictionary<string, string> anotherStudent = new Dictionary<string, string> () { { "Name", "Brenda" }, { "Cohort", "Day 37" }
             };
 
+            foreach (KeyValuePair<string, string> pair in student) {
+                Console.WriteLine ($"The students {pair.Key} is {pair.Value}");
+            }
+
         }
     }
 }
